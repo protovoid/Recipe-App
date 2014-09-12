@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CC861400-094E-4A61-A0BA-058B176C3DD4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Recipe App</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>22CAA75FACA6DAB11D3BFA56E71B7A9156EC46BE</key>
+		<string>https://github.com/protovoid/test.git</string>
+		<key>ACC42E2B3FFEC5DACE2D91AD01526C94936F6C2B</key>
+		<string>https://github.com/protovoid/Recipe-App.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Recipe App.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>22CAA75FACA6DAB11D3BFA56E71B7A9156EC46BE</key>
+		<string>../../..</string>
+		<key>ACC42E2B3FFEC5DACE2D91AD01526C94936F6C2B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/protovoid/Recipe-App.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ACC42E2B3FFEC5DACE2D91AD01526C94936F6C2B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>22CAA75FACA6DAB11D3BFA56E71B7A9156EC46BE</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ACC42E2B3FFEC5DACE2D91AD01526C94936F6C2B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Recipe-App</string>
+		</dict>
+	</array>
+</dict>
+</plist>
