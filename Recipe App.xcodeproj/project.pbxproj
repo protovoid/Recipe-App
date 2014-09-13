@@ -10,6 +10,7 @@
 		630C298F19C28F4800D380B1 /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630C298E19C28F4800D380B1 /* RecipeViewController.m */; };
 		630C299519C292AA00D380B1 /* RARecipeTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 630C299419C292AA00D380B1 /* RARecipeTableViewDataSource.m */; };
 		630C299819C2962000D380B1 /* RARecipes.m in Sources */ = {isa = PBXBuildFile; fileRef = 630C299719C2962000D380B1 /* RARecipes.m */; };
+		630C29D619C4AFD700D380B1 /* RecipeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630C29D519C4AFD700D380B1 /* RecipeDetailViewController.m */; };
 		71F67B51192C8D6A00E609F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F67B50192C8D6A00E609F1 /* Foundation.framework */; };
 		71F67B53192C8D6A00E609F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F67B52192C8D6A00E609F1 /* CoreGraphics.framework */; };
 		71F67B55192C8D6A00E609F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F67B54192C8D6A00E609F1 /* UIKit.framework */; };
@@ -41,6 +42,8 @@
 		630C299419C292AA00D380B1 /* RARecipeTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RARecipeTableViewDataSource.m; sourceTree = "<group>"; };
 		630C299619C2962000D380B1 /* RARecipes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RARecipes.h; sourceTree = "<group>"; };
 		630C299719C2962000D380B1 /* RARecipes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RARecipes.m; sourceTree = "<group>"; };
+		630C29D419C4AFD700D380B1 /* RecipeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeDetailViewController.h; sourceTree = "<group>"; };
+		630C29D519C4AFD700D380B1 /* RecipeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeDetailViewController.m; sourceTree = "<group>"; };
 		71F67B4D192C8D6A00E609F1 /* Recipe App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71F67B50192C8D6A00E609F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		71F67B52192C8D6A00E609F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -88,10 +91,8 @@
 			children = (
 				630C298D19C28F4800D380B1 /* RecipeViewController.h */,
 				630C298E19C28F4800D380B1 /* RecipeViewController.m */,
-				630C299319C292AA00D380B1 /* RARecipeTableViewDataSource.h */,
-				630C299419C292AA00D380B1 /* RARecipeTableViewDataSource.m */,
-				630C299619C2962000D380B1 /* RARecipes.h */,
-				630C299719C2962000D380B1 /* RARecipes.m */,
+				630C29D419C4AFD700D380B1 /* RecipeDetailViewController.h */,
+				630C29D519C4AFD700D380B1 /* RecipeDetailViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -131,6 +132,10 @@
 			children = (
 				71F67B5F192C8D6A00E609F1 /* RAAppDelegate.h */,
 				71F67B60192C8D6A00E609F1 /* RAAppDelegate.m */,
+				630C299619C2962000D380B1 /* RARecipes.h */,
+				630C299719C2962000D380B1 /* RARecipes.m */,
+				630C299319C292AA00D380B1 /* RARecipeTableViewDataSource.h */,
+				630C299419C292AA00D380B1 /* RARecipeTableViewDataSource.m */,
 				630C298919C28D1500D380B1 /* View Controllers */,
 				71F67B62192C8D6A00E609F1 /* Images.xcassets */,
 				71F67B57192C8D6A00E609F1 /* Supporting Files */,
@@ -264,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71F67B5D192C8D6A00E609F1 /* main.m in Sources */,
+				630C29D619C4AFD700D380B1 /* RecipeDetailViewController.m in Sources */,
 				630C299519C292AA00D380B1 /* RARecipeTableViewDataSource.m in Sources */,
 				630C299819C2962000D380B1 /* RARecipes.m in Sources */,
 				71F67B61192C8D6A00E609F1 /* RAAppDelegate.m in Sources */,

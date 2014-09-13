@@ -11,7 +11,8 @@
 @interface RARecipeTableViewDataSource : NSObject <UITableViewDataSource>
 
 
-
+// day 4
+- (NSString *)titleAtIndexPath:(NSIndexPath *)path;
 
 
 @end

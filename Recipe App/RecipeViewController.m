@@ -8,6 +8,8 @@
 
 #import "RecipeViewController.h"
 #import "RARecipeTableViewDataSource.h"
+#import "RecipeDetailViewController.h"
+#import "RARecipes.h"
 
 @interface RecipeViewController ()
 
@@ -26,14 +28,38 @@
     
     self.dataSource = [RARecipeTableViewDataSource new];
     
-    self.tableView = [[UITableView alloc] initWithFrame:self.view.frame]; // tableview fills frame
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    // self.tableView = [[UITableView alloc] initWithFrame:self.view.frame]; // tableview fills frame
     self.tableView.dataSource = self.dataSource; // tells tableview who data source is (self in this case)
     [self.view addSubview:self.tableView];
     
     // tell tableview what type of cell we are registering
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     
+
+    self.tableView.delegate = self; // sets delegate to self, brackets in .h file allow it
+    // self.title = @"Chad";
+    
+    
 }
+
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    // NSLog(@"%@", indexPath);
+    // self.title = [self.dataSource titleAtIndexPath:indexPath]; // calling method from the data source
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES]; // deselects chosen row when coming back to tableview
+    
+    RecipeDetailViewController *detailViewController = [RecipeDetailViewController new];
+    [self.navigationController pushViewController:detailViewController animated:YES];
+    detailViewController.title = [self.dataSource titleAtIndexPath:indexPath]; // sets title of detailViewController
+    
+}
+
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -49,5 +75,7 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
 
 @end

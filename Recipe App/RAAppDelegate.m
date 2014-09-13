@@ -16,7 +16,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    RecipeViewController *recipeViewController = [RecipeViewController new];
+    RecipeViewController *recipeViewController = [RecipeViewController new]; // creates a new ViewController
     
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:recipeViewController]; // created a UINavigationController
     
