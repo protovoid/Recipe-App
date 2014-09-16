@@ -21,7 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor redColor];
-    self.title = [RARecipes titleAtIndex:self.recipeIndex];
+    // self.title = [RARecipes titleAtIndex:self.recipeIndex];
     self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame]; // new scrollview that fills frame
     [self.view addSubview:self.scrollView];
     
@@ -40,7 +40,7 @@
     CGFloat labelHeight = 20;
     // CGFloat topLabel = 20;
     
-    UILabel *descriptionLabel = [[UILabel alloc] initWithFrame:CGRectMake(topMargin, topMargin, self.view.frame.size.width, 100)];
+    UILabel *descriptionLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, topMargin, self.view.frame.size.width, 100)];
     descriptionLabel.text = [RARecipes descriptionAtIndex:self.recipeIndex];
     descriptionLabel.textColor = [UIColor blackColor];
     descriptionLabel.backgroundColor = [UIColor orangeColor];
@@ -49,11 +49,18 @@
     for (int i = 0; i < [RARecipes descriptionAtIndex:self.recipeIndex]; i++) {
         descriptionLabel.text = [RARecipes descriptionAtIndex:self.recipeIndex];
     }
-    */
-    topMargin += 20;
+     */
+  
+    topMargin += 90;
     
-    UILabel *ingredientsLabel = [[UILabel alloc] initWithFrame:CGRectMake(topMargin, topMargin + labelHeight, self.view.frame.size.width, 100)];
-    ingredientsLabel.text = [RARecipes descriptionAtIndex:self.recipeIndex];
+    UILabel *ingredientsLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, topMargin + labelHeight, self.view.frame.size.width, 100)];
+    // ingredientsLabel.text = [RARecipes ingredientCountAtIndex:self.recipeIndex];
+    
+    /*
+    [self.abilitygeneration setText:[NSString stringWithFormat:@"%d",((TestAbility *)[self.testabilities objectAtIndex:0]).abilitygeneration]];
+*/
+    
+    
     ingredientsLabel.textColor = [UIColor blackColor];
     ingredientsLabel.backgroundColor = [UIColor grayColor];
     
@@ -62,20 +69,20 @@
         
     }
     */
-    topMargin += 20;
+    topMargin += 90;
     
-    /*
+    
     UILabel *directionsLabel = [[UILabel alloc] initWithFrame:CGRectMake(topMargin, topMargin, self.view.frame.size.width, 100)];
-    directionsLabel.text = [RARecipes directionsAtIndex:self.recipeIndex];
+    // directionsLabel.text = [RARecipes directionsAtIndex:self.recipeIndex];
     directionsLabel.textColor = [UIColor blackColor];
     directionsLabel.backgroundColor = [UIColor blueColor];
     
     
-    for (int i = 0; i < [RARecipes directionsAtIndex:self.recipeIndex]; i++) {
+    for (int i = 0; i < [[RARecipes directionsAtIndex:self.recipeIndex] count]; i++) {
         
     }
-    */
-    topMargin += 20;
+    
+    topMargin += 90;
     
     
     [self.scrollView addSubview:descriptionLabel];
